@@ -24,12 +24,12 @@ var summaries = new[ ]
 };
 
 
-// Banco de Dados
 {
     var scope = app.Services.CreateScope();
     var dbContext = scope.ServiceProvider.GetRequiredService<ProdutoContext>();
     dbContext.Database.EnsureCreated();
 }
+
 
 
 
